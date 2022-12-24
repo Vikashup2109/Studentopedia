@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
-import Photo from "../assets/owner.png"
+import Photo from "../assets/Owner.png"
 import { RiYoutubeFill, RiInstagramFill, RiFacebookCircleFill, RiLinkedinBoxFill, RiExternalLinkFill } from 'react-icons/ri'
 // import { HiOutlineArrowTopRightOnSquare } from 'react-icons/hi'
 
