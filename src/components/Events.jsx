@@ -60,7 +60,6 @@ const Events = ({ upcomingEvents, completedEvents }) => {
                <section className='w-9/12 mx-auto py-10'>
                     <div className='flex justify-between items-center'>
                          <span className='!text-primary text-2xl font-bold'>Events</span>
-
                     </div>
                     <div className=' mx-auto py-10 space-y-10'>
                          <div>

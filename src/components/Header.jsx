@@ -14,8 +14,12 @@ const Header = () => {
                          </div>
                          <div className=''>
                               <ul className='flex gap-10 items-center text-lg'>
-                                   <li className='cursor-pointer'>Events</li>
-                                   <li className='cursor-pointer' >About Us</li>
+                                   <Link to="/events">
+                                        <li className='cursor-pointer'>Events</li>
+                                   </Link>
+                                   <Link to="/aboutUs">
+                                        <li className='cursor-pointer' >About Us</li>
+                                   </Link>
                                    <Link to="/donation">
                                         <button className='px-4 py-2 rounded-xl border-2 !border-primary !bg-white text-black hover:!text-white hover:!bg-primary cursor-pointer'>Donate</button>
                                    </Link>

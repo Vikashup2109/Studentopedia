@@ -7,8 +7,10 @@ import sanityClient from "../Client";
 import imageUrlBuilder from "@sanity/image-url";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { toast } from 'react-tiny-toast';
 
-const Home = ({ upcomingEvents, completedEvents, formData }) => {
+
+const Home = ({ upcomingEvents, completedEvents }) => {
      const upcomingEventsHome = upcomingEvents.slice(0, 3).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
      const completedEventsHome = completedEvents.slice(0, 6).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
 
@@ -22,17 +24,11 @@ const Home = ({ upcomingEvents, completedEvents, formData }) => {
           setTempEvent(TempEvent);
           setModalShow(true);
      }
-     const [subscriberName, setSubscriberName] = useState([])
 
-     const handleEmailChange = (e) => {
-          setSubscriberName(e.target.value);
+     const openToast = () => {
+          toast('Subscribed Successfully', { duration: 1000, position: 'top-center' });
      }
-     const onSubmit = (e) => {
-          // subscribersList.push(subscriberName)
-          e.preventDefault();
-          console.log(subscriberName);
-          formData(subscriberName);
-     }
+
      return (
           <>
                {/* Main Slider Section */}
@@ -41,10 +37,10 @@ const Home = ({ upcomingEvents, completedEvents, formData }) => {
                {/* Events Section */}
                <section className='w-9/12 mx-auto py-10'>
                     <div className='flex justify-between items-center'>
-                         <span className='!text-primary text-3xl font-bold'>Events</span>
+                         <span className='!text-primary text-3xl font-bold' onClick={openToast}>Events</span>
                          <div className='pl-4 border !border-black border-opacity-30 rounded-lg'>
-                              <form onSubmit={onSubmit}>
-                                   <input type="text" name="subscribe" placeholder='Type your email' className='py-2 outline-none w-64' onChange={handleEmailChange} required />
+                              <form>
+                                   <input placeholder='Type your email' className='py-2 outline-none w-64' required />
                                    <button className='px-4 py-2 rounded-lg !bg-primary text-white !hover:bg-opPrimary cursor-pointer'>Subscribe</button>
                               </form>
                          </div>
