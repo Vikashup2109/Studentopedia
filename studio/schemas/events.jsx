@@ -16,20 +16,99 @@ export default {
                description: 'Name of the event'
           },
           {
-               name: 'image',
+               name: 'image1',
                type: 'image',
-               title: 'Image',
+               title: 'Image1',
                options: {
                     hotspot: true
                }
           },
           {
-               name: 'slug',
-               title: 'slug',
-               type: 'slug',
+               name: 'image2',
+               type: 'image',
+               title: 'Image2',
                options: {
-                    source: 'title',
-                    maxLength: 90
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image3',
+               type: 'image',
+               title: 'Image3',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image4',
+               type: 'image',
+               title: 'Image4',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image5',
+               type: 'image',
+               title: 'Image5',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image6',
+               type: 'image',
+               title: 'Image6',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image7',
+               type: 'image',
+               title: 'Image7',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image8',
+               type: 'image',
+               title: 'Image8',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image9',
+               type: 'image',
+               title: 'Image9',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image10',
+               type: 'image',
+               title: 'Image10',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image11',
+               type: 'image',
+               title: 'Image11',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
+               name: 'image12',
+               type: 'image',
+               title: 'Image12',
+               options: {
+                    hotspot: true
                }
           },
           {

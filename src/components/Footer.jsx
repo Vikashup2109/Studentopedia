@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 import Photo from "../assets/Owner.png"
 import { RiYoutubeFill, RiInstagramFill, RiFacebookCircleFill, RiLinkedinBoxFill, RiExternalLinkFill } from 'react-icons/ri'
@@ -29,10 +30,12 @@ const Footer = () => {
                          <div className='flex gap-16 mx-auto justify-between text-white'>
                               <div className='flex items-center gap-8'>
                                    <img src={Photo} alt="Owner" className='w-16 rounded-xl' />
-                                   <div className='flex flex-col'>
-                                        <span className='text-lg font-mono'>Owned and Managed by</span>
-                                        <span className='text-xl font-mono flex items-center gap-4'>Harshit Shakya <RiExternalLinkFill /></span>
-                                   </div>
+                                   <Link to="/harshitShakya">
+                                        <div className='flex flex-col'>
+                                             <span className='text-lg font-mono'>Owned and Managed by</span>
+                                             <span className='text-xl font-mono flex items-center gap-4'>Harshit Shakya <RiExternalLinkFill /></span>
+                                        </div>
+                                   </Link>
                               </div>
                               <div className='items-center my-auto pr-10    space-x-10'>
                                    <button type="submit" className='px-4 py-2 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>Call Us</button>

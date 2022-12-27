@@ -64,7 +64,8 @@ const Home = ({ upcomingEvents, completedEvents }) => {
                                                                  <span>{event.startTime}</span>
                                                             </div>
                                                             <div>
-                                                                 <img src={urlFor(event.image).url()} alt="" />
+                                                                 {event.image1 &&
+                                                                      <img src={urlFor(event.image1).url()} alt="" />}
                                                                  <div className='EventName'>
                                                                       <span className='text-2xl font-bold'>{event.title}</span>
                                                                  </div>
@@ -96,7 +97,8 @@ const Home = ({ upcomingEvents, completedEvents }) => {
                                                             <span>{event.startTime}</span>
                                                        </div>
                                                        <div>
-                                                            <img src={urlFor(event.image).url()} alt="" />
+                                                            {event.image1 &&
+                                                                 <img src={urlFor(event.image1).url()} alt="" />}
                                                             <div className='EventName'>
                                                                  <span className='text-2xl font-bold'>{event.title}</span>
                                                             </div>
@@ -135,8 +137,43 @@ const Home = ({ upcomingEvents, completedEvents }) => {
                               <div className='bg-teal-700 px-3 py-2 rounded-lg text-white font-mono'><span className='text-lg'>Chief Guest: </span> <span className='text-2xl'>{tempEvent.chiefGuest}</span></div>
                               <div className='bg-emerald-900 px-3 py-2 rounded-lg text-white font-mono'><span className='text-lg'>Event Head: </span> <span className='text-2xl'>{tempEvent.eventHead}</span></div>
                          </div>
-                         <div>
-                              <img src={urlFor(tempEvent.image).url()} alt="" className='w-2/3 justify-center text-center mx-auto' />
+                         <div className='grid grid-cols-4 gap-0 px-6'>
+                              {tempEvent.image1 &&
+                                   <img src={urlFor(tempEvent.image1).url()} alt="" />
+                              }
+                              {tempEvent.image2 &&
+                                   <img src={urlFor(tempEvent.image2).url()} alt="" />
+                              }
+                              {tempEvent.image3 &&
+                                   <img src={urlFor(tempEvent.image3).url()} alt="" />
+                              }
+                              {tempEvent.image4 &&
+                                   <img src={urlFor(tempEvent.image4).url()} alt="" />
+                              }
+                              {tempEvent.image5 &&
+                                   <img src={urlFor(tempEvent.image5).url()} alt="" />
+                              }
+                              {tempEvent.image6 &&
+                                   <img src={urlFor(tempEvent.image6).url()} alt="" />
+                              }
+                              {tempEvent.image7 &&
+                                   <img src={urlFor(tempEvent.image7).url()} alt="" />
+                              }
+                              {tempEvent.image8 &&
+                                   <img src={urlFor(tempEvent.image8).url()} alt="" />
+                              }
+                              {tempEvent.image9 &&
+                                   <img src={urlFor(tempEvent.image9).url()} alt="" />
+                              }
+                              {tempEvent.image10 &&
+                                   <img src={urlFor(tempEvent.image10).url()} alt="" />
+                              }
+                              {tempEvent.image11 &&
+                                   <img src={urlFor(tempEvent.image11).url()} alt="" />
+                              }
+                              {tempEvent.image12 &&
+                                   <img src={urlFor(tempEvent.imag2e1).url()} alt="" />
+                              }
                          </div>
                          <p className='py-4 text-justify px-10'>
                               {tempEvent.description}
