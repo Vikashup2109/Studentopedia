@@ -34,8 +34,12 @@ const Footer = () => {
                                    </Link>
                               </div>
                               <div className='items-center my-auto flex gap-10 justify-between'>
-                                   <button type="submit" className='px-4 py-2 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>Call Us</button>
-                                   <button type="submit" className='px-4 py-2 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>Donate Us</button>
+                                   <Link to="/aboutUs">
+                                        <button type="submit" className='px-4 py-2 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>About Us</button>
+                                   </Link>
+                                   <Link to="/donation">
+                                        <button type="submit" className='px-4 py-2 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>Donate Us</button>
+                                   </Link>
                               </div>
                          </div>
                          <div className='mx-auto w-fit pt-8'>
