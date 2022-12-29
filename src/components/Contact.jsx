@@ -2,28 +2,15 @@ import React, { useRef } from 'react'
 // import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-
-     // const formRef = useRef(null);
-     // const sendEmail = (e) => {
-     //      e.preventDefault();
-     //      emailjs.sendForm('contact_form_response', 'template_ak86u7c', formRef.current, 'ROW7aDHA1EMB4xldZ')
-     //           .then((result) => {
-     //                console.log(result.text);
-     //                console.log("Response Submitted")
-     //                e.target.reset()
-     //           }, (error) => {
-     //                console.log(error.text);
-     //           });
-     // };
      return (
           <>
                <section className='w-full mx-auto pt-6 !bg-[#141414]'>
-                    <div className='w-9/12 mx-auto'>
+                    <div className='w-11/12 md:w-10/12 lg:9/12 mx-auto'>
                          <h1 className=' !text-white text-3xl font-bold'>Get in Touch</h1>
-                         <div className='w-9/12 mx-auto pt-8 pb-16 flex justify-between'>
+                         <div className='lg:w-8/12 flex flex-col sm:flex-row sm:w-11/12 mx-auto pt-8 pb-16 justify-between'>
                               <div className='text-center'>
                                    <span className='!text-white text-lg'>Contact Us</span>
-                                   <div className="w-56 xsm:w-60 sm:w-80 md:w-36 lg:w-72 mx-auto border border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 pb-4 my-10">
+                                   <div className="w-72 sm:w-60 lg:w-72 mx-auto border border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 pb-4 my-10">
                                         <h3 className="title text-small font-bold !text-white mt-3">Whatsapp</h3>
                                         <span className="data text-small block sm:hidden lg:block mb-3 !text-white">+91 6387768007</span>
                                         <a href={`https://api.whatsapp.com/send?phone=916387768007&text=Hey`}
@@ -33,7 +20,7 @@ const Contact = () => {
                                              <i className="uil uil-arrow-right text-normal"></i>
                                         </a>
                                    </div>
-                                   <div className="w-56 xsm:w-60 sm:w-80 md:w-36 lg:w-72 mx-auto border !border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 pb-4 my-10">
+                                   <div className="w-72 sm:w-60 lg:w-72 mx-auto border !border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 pb-4 my-10">
                                         <h3 className="title text-small font-bold !text-white mt-3">Email</h3>
                                         <span className="data text-small block sm:hidden lg:block mb-3 !text-white">2019kuec1042@iiitkota.ac.in</span>
                                         <a href="mailto:2019kuec1042@iiitkota.ac.in"
@@ -43,7 +30,7 @@ const Contact = () => {
                                              <i className="uil uil-arrow-right text-normal"></i>
                                         </a>
                                    </div>
-                                   <div className="w-56 xsm:w-60 sm:w-80 md:w-36 lg:w-72 mx-auto border !border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 pb-4 my-10">
+                                   <div className="w-72 sm:w-60 lg:w-72 mx-auto border !border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 pb-4 my-10">
                                         <h3 className="title text-small font-bold !text-white">Email</h3>
                                         <span className="data text-small block sm:hidden lg:block mb-3 !text-white">2019kuec1042@iiitkota.ac.in</span>
                                         <a href="mailto:2019kuec1042@iiitkota.ac.in"
@@ -56,9 +43,9 @@ const Contact = () => {
                               </div>
                               <div>
                                    <span className='!text-white text-lg'>Send Us a mail</span>
-                                   <form action="https://formsubmit.co/studentopedia94@gmail.com" method='POST' className="w-60 xsm:w-80 md:w-72 mx-auto">
+                                   <form action="https://formsubmit.co/studentopedia94@gmail.com" method='POST' className="w-72 mx-auto">
                                         <div className="relative my-8 h-16">
-                                             <label htmlFor="" className="absolute !text-white -top-4 left-5 text-smaller p-1 !bg-[#141414]">Name</label>
+                                             <span htmlFor="" className="absolute !text-white -top-4 left-5 text-smaller p-1 !bg-[#141414]">Name</span>
                                              <input
                                                   type="text"
                                                   name='name'

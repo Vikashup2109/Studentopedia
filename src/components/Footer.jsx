@@ -8,11 +8,11 @@ import { RiYoutubeFill, RiInstagramFill, RiFacebookCircleFill, RiLinkedinBoxFill
 const Footer = () => {
      return (
           <>
-               <footer className='bg-[#141414] pt-8 pb-2 text-white'>
-                    <div className='w-7/12 mx-auto items-center space-y-8'>
-                         <div className='flex items-center justify-between'>
-                              <div className='w-2/6'>
-                                   <img src={Logo} alt='Logo' className='w-60 rounded-xl' />
+               <footer className='w-full bg-[#141414] pt-8 pb-2 text-white'>
+                    <div className='w-11/12 md:w-10/12 lg:w-7/12 mx-auto items-center space-y-8'>
+                         <div className='flex flex-col md:flex-row items-center justify-between'>
+                              <div className='py-6 sm:py-0 md:w-2/6 justify-center'>
+                                   <img src={Logo} alt='Logo' className='w-60 rounded-xl sm:        pb-8' />
                               </div>
                               <div className='text-center'>
                                    <div className='flex gap-10 items-center text-lg'>
@@ -21,13 +21,9 @@ const Footer = () => {
                                         <RiFacebookCircleFill className='text-5xl' />
                                         <RiLinkedinBoxFill className='text-5xl' />
                                    </div>
-                                   {/* <div className='my-6 flex gap-16 mx-auto px-auto text-center text-white'>
-                                        <span className='w-1/2 text-xl'>Events</span>
-                                        <span className='w-1/2 text-xl'>About Us</span>
-                                   </div> */}
                               </div>
                          </div>
-                         <div className='flex gap-16 mx-auto justify-between text-white'>
+                         <div className='flex flex-col md:flex-row gap-16 mx-auto md:justify-between items-center text-white'>
                               <div className='flex items-center gap-8'>
                                    <img src={Photo} alt="Owner" className='w-16 rounded-xl' />
                                    <Link to="/harshitShakya">
@@ -37,7 +33,7 @@ const Footer = () => {
                                         </div>
                                    </Link>
                               </div>
-                              <div className='items-center my-auto pr-10    space-x-10'>
+                              <div className='items-center my-auto flex gap-10 justify-between'>
                                    <button type="submit" className='px-4 py-2 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>Call Us</button>
                                    <button type="submit" className='px-4 py-2 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>Donate Us</button>
                               </div>

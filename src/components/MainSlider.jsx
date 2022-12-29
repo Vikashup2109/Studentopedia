@@ -17,13 +17,13 @@ const MainSlider = () => {
      const urlFor = (source) => builder.image(source)
      return (
           <>
-               <section className='my-auto h-screen overflow-hidden'>
-                    <Carousel interval={3000} pause='hover' variant='dark' className='my-auto h-screen'>
+               <section className='my-auto overflow-hidden'>
+                    <Carousel interval={3000} pause='hover' variant='dark' className='my-auto '>
                          {mainImages && mainImages.map((image) => {
                               return (
-                                   <Carousel.Item>
+                                   <Carousel.Item className=''>
                                         <>
-                                             <img src={urlFor(image.image).url()} alt="Hello" className="w-full mx-auto" />
+                                             <img src={urlFor(image.image).url()} alt="Hello" className="w-full mx-auto lg:h-screen" />
                                         </>
                                    </Carousel.Item>
                               )

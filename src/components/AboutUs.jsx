@@ -15,9 +15,9 @@ const AboutUs = () => {
      return (
           <>
 
-               <section className='w-8/12 mx-auto text-justify'>
+               <section className='w-11/12 sm:w-10/12 lg:w-8/12 mx-auto text-justify'>
                     <div className='w-full text-center py-16'>
-                         <span className='text-5xl text-center'>Let's Know the Studentopedia.</span>
+                         <span className='text-4xl sm:text-5xl text-center'>Let's Know the Studentopedia.</span>
                     </div>
                     {aboutUsData && aboutUsData.map((data) => {
                          return (

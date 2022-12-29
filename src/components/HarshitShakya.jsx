@@ -18,26 +18,28 @@ const HarshitShakya = () => {
      const urlFor = (source) => builder.image(source)
      return (
           <>
-               <section className='w-8/12 mx-auto text-justify'>
+               <section className='w-11/12 sm:w-10/12 xl:w-8/12 mx-auto text-justify'>
                     <div className='w-full text-center py-16'>
                          <span className='text-5xl text-center'>Founder's Note.</span>
                     </div>
                     {aboutHarshitData && aboutHarshitData.map((data) => {
                          return (
                               <>
-                                   <div className='flex gap-6'>
-                                        <div className='w-4/12'>
+                                   <div className='flex flex-col lg:flex-row gap-6'>
+                                        <div className='text-center mx-auto lg:w-4/12'>
                                              {data.image &&
                                                   <div className='mb-10'>
                                                        <img src={urlFor(data.image).url()} alt='Harshit Shakya' className='' />
                                                   </div>
                                              }
                                         </div>
-                                        <div className='w-8/12'>
+                                        <div className='lg:w-8/12'>
                                              <p className='text-lg'>{data.intro}</p>
                                         </div>
                                    </div>
-                                   <span className='text-3xl font-mono'>About me.</span>
+                                   <div className='mt-10 lg:mt-0'>
+                                        <span className='text-3xl font-mono'>About me.</span>
+                                   </div>
                                    <div>
                                         <div>
                                              <p className='text-lg py-2'>{data.studentopediaAspect}</p>
