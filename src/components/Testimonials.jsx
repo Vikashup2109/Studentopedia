@@ -24,8 +24,8 @@ const testimonials = () => {
           <>
                <section className='w-full'>
                     <div className='w-11/12 md:w-9/12 mx-auto py-10'>
-                         <div className='flex justify-between items-center'>
-                              <span className='!text-primary text-3xl font-bold'>Testimonials</span>
+                         <div className='flex items-center'>
+                              <span className='!text-primary text-center sm:!text-left w-full text-3xl font-bold'>Testimonials</span>
                          </div>
                          <div className='mx-auto py-2 space-y-16'>
                               <Carousel interval={3000} pause='hover' variant="dark">

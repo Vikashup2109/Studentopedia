@@ -11,8 +11,12 @@ import { toast } from 'react-tiny-toast';
 
 
 const Home = ({ upcomingEvents, completedEvents }) => {
+
+     const screenWidth = window.innerWidth;
+     const noOfCompletedEvents = screenWidth > 640 ? 6 : 3;
+
      const upcomingEventsHome = upcomingEvents.slice(0, 3).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
-     const completedEventsHome = completedEvents.slice(0, 6).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+     const completedEventsHome = completedEvents.slice(0, noOfCompletedEvents).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
 
      // console.log(upcomingEventsHome)
      const builder = imageUrlBuilder(sanityClient);
