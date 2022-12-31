@@ -10,34 +10,18 @@ const Contact = () => {
                          <div className='lg:w-8/12 flex flex-col sm:flex-row sm:w-11/12 mx-auto pt-8 pb-16 justify-between'>
                               <div className='text-center'>
                                    <span className='!text-white text-lg'>Contact Us</span>
-                                   <div className="w-72 sm:w-60 lg:w-72 mx-auto border border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 py-1 my-10">
-                                        <div className='flex sm:flex-col justify-around w-full mx-auto sm:pt-5'>
-                                             <h3 className="title text-sm font-bold !text-white">Whatsapp: </h3>
-                                             <span className="data text-sm block lg:block !text-white">+91 6387768007</span>
-                                        </div>
-                                        <a href={`https://api.whatsapp.com/send?phone=916387768007&text=Hey`}
-                                             className=" !text-white text-sm inline-flex items-center justify center gap-1 sm:pb-5"
-                                             target="_blank" rel="noreferrer"
-                                        > Write Me
-                                        </a>
+                                   <div className="flex flex-row sm:!flex-col justify-center w-72 sm:w-60 lg:w-72 mx-auto border border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 py-2 my-10">
+                                        <h3 className="title text-sm font-bold !text-white">Whatsapp: </h3>
+                                        <span className="data text-sm block lg:block !text-white"> +91 6387768007</span>
                                    </div>
-                                   <div className="w-72 sm:w-60 lg:w-72 mx-auto border !border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 py-1">
-                                        <h3 className="title text-sm font-bold !text-white sm:pt-5">Email</h3>
+                                   <div className="flex flex-row sm:!flex-col justify-center w-72 sm:w-60 lg:w-72 mx-auto border !border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 py-2">
+                                        <h3 className="title text-sm font-bold !text-white">Email:</h3>
                                         <span className="data text-sm block lg:block !text-white">2019kuec1042@iiitkota.ac.in</span>
-                                        <a href="mailto:2019kuec1042@iiitkota.ac.in"
-                                             className=" !text-white text-sm inline-flex items-center justify center gap-1 sm:pb-5"
-                                             target="_blank" rel="noreferrer"
-                                        > Write Me
-                                        </a>
+
                                    </div>
-                                   <div className="w-72 sm:w-60 lg:w-72 mx-auto border !border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 py-1 my-10">
-                                        <h3 className="title text-sm font-bold !text-white sm:pt-5">Email</h3>
+                                   <div className="flex flex-row sm:!flex-col justify-center w-72 sm:w-60 lg:w-72 mx-auto border !border-white border-opacity-30 rounded-xl text-center px-4 sm:px-4 py-2 my-10">
+                                        <h3 className="title text-sm font-bold !text-white">Email:</h3>
                                         <span className="data text-sm block lg:block !text-white">2019kuec1042@iiitkota.ac.in</span>
-                                        <a href="mailto:2019kuec1042@iiitkota.ac.in"
-                                             className=" !text-white text-sm inline-flex items-center justify center gap-1 sm:pb-5"
-                                             target="_blank" rel="noreferrer"
-                                        > Write Me
-                                        </a>
                                    </div>
                               </div>
                               <div className='text-center'>
@@ -65,7 +49,7 @@ const Contact = () => {
                                         </div>
                                         <div className="relative mb-6">
                                              <label htmlFor="" className="absolute !text-white -top-4 left-5 text-sm p-1 !bg-[#141414]">Message</label>
-                                             <textarea name="message" cols="30" rows="8"
+                                             <textarea name="message" cols="30" rows="3"
                                                   className='resize-none top-0 left-0 w-full h-full border-2 border-solid !border-white border-opacity-30 bg-inherit !text-white text-textColor outline-0 rounded-xl p-6'
                                                   placeholder='Write your message'
                                                   required

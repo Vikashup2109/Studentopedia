@@ -12,7 +12,9 @@ const Footer = () => {
                     <div className='w-11/12 md:w-10/12 lg:w-7/12 mx-auto items-center space-y-8'>
                          <div className='flex flex-col md:flex-row items-center justify-between'>
                               <div className='py-6 sm:py-0 md:w-2/6 justify-center'>
-                                   <img src={Logo} alt='Logo' className='w-60 rounded-xl sm:pb-8' />
+                                   <img src={Logo} alt='Logo' className='hidden sm:block w-60 rounded-xl sm:pb-8' />
+                                   <a href="/" className='text-3xl block sm:hidden'>Studentopedia</a>
+
                               </div>
                               <div className='text-center'>
                                    <div className='flex gap-10 items-center text-lg'>

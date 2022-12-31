@@ -41,6 +41,7 @@ const HarshitShakya = () => {
                                         <span className='text-3xl font-mono'>About me.</span>
                                    </div>
                                    <div>
+
                                         <div>
                                              <p className='text-lg py-2'>{data.studentopediaAspect}</p>
                                         </div>

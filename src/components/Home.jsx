@@ -88,7 +88,7 @@ const Home = ({ upcomingEvents, completedEvents }) => {
                               <div className='flex justify-between'>
                                    <span className='!text-primary text-lg font-bold'>Past Events</span>
                                    <Link to="/events">
-                                        <button className='px-2 sm:px-4 py-1.5 rounded-xl !text-black border-2 !border-primary hover:!text-white hover:!bg-primary cursor-pointer'>View All <span className='hidden sm:inline-block'>Cpmpleted Events</span></button>
+                                        <button className='px-2 sm:px-4 py-1.5 rounded-xl !text-black border-2 !border-primary hover:!text-white hover:!bg-primary cursor-pointer'>View All <span className='hidden sm:inline-block'>Completed Events</span></button>
                                    </Link>
                               </div>
                               <div className='parent py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto'>
