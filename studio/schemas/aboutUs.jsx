@@ -4,12 +4,6 @@ export default {
      title: 'About US',
      fields: [
           {
-               name: 'index',
-               type: 'string',
-               title: 'Index',
-               description: 'Index'
-          },
-          {
                name: 'intro',
                type: 'text',
                title: 'Introduction',

@@ -24,10 +24,26 @@ export default {
                description: 'Studentopedia Aspect of Harsit Shakya.'
           },
           {
+               title: 'studentopediaAspectImage',
+               name: 'studentopediaAspectImage',
+               type: 'image',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
                name: 'EngineeringAspect',
                type: 'text',
                title: 'Engineering Aspect',
                description: 'Engineering Aspect of Harshit Shakya.'
+          },
+          {
+               title: 'EngineeringAspectImage',
+               name: 'EngineeringAspectImage',
+               type: 'image',
+               options: {
+                    hotspot: true
+               }
           },
           {
                name: 'musicAspect',
@@ -36,10 +52,26 @@ export default {
                description: 'Music Aspect of Harshit Shakya.'
           },
           {
+               title: 'musicAspectImage',
+               name: 'musicAspectImage',
+               type: 'image',
+               options: {
+                    hotspot: true
+               }
+          },
+          {
                name: 'OtherAspect',
                type: 'text',
                title: 'Other Aspect',
                description: 'Other Aspect of Harshit Shakya.'
+          },
+          {
+               title: 'OtherAspectImage',
+               name: 'OtherAspectImage',
+               type: 'image',
+               options: {
+                    hotspot: true
+               }
           },
           {
                name: 'Outro',

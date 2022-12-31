@@ -7,7 +7,10 @@ const HarshitShakya = () => {
      const [aboutHarshitData, setAboutHarshitData] = useState([]);
      useEffect(() => {
           const fetchData = async () => {
-               const data = await sanityClient.fetch(`*[_type == "aboutHarshitShakya"]{intro, studentopediaAspect, EngineeringAspect, musicAspect, OtherAspect, Outro, image{asset->{url}}}`)
+               const data = await sanityClient.fetch(`*[_type == "aboutHarshitShakya"]{intro, 
+                    studentopediaAspect, studentopediaAspectImage{asset->{url}} ,  EngineeringAspect, EngineeringAspectImage{asset->{url}}, 
+                    musicAspect, musicAspectImage{asset->{url}}, OtherAspect, OtherAspectImage{asset->{url}}, 
+                    Outro, image{asset->{url}}}`)
                // console.log(data)
                setAboutHarshitData(data)
           }
@@ -41,16 +44,46 @@ const HarshitShakya = () => {
                                         <span className='text-3xl font-mono'>About me.</span>
                                    </div>
                                    <div>
-
-                                        <div>
-                                             <p className='text-lg py-2'>{data.studentopediaAspect}</p>
+                                        {data.studentopediaAspectImage && <div className='border-2 !border-primary my-6 p-4 !border-opacity-30 rounded-lg sm:border-none'>
+                                             <div className='flex flex-col sm:flex-row sm:!gap-10 gap-1'>
+                                                  <img src={urlFor(data.studentopediaAspectImage).url()} alt="" className='sm:w-1/2 w-full' />
+                                                  <div className='mx-auto'>
+                                                       <span className='text-3xl font-bold font-serif'>"An Enterpreneuer."</span>
+                                                       <p className='text-lg pt-2'>{data.studentopediaAspect}</p>
+                                                  </div>
+                                             </div>
                                         </div>
-                                        <div>
-                                             <p className='text-lg py-2'>{data.EngineeringAspect}</p>
+                                        }
+                                        {data.EngineeringAspectImage && <div className='border-2 !border-primary my-6 p-4 !border-opacity-30 rounded-lg sm:border-none'>
+                                             <div className='flex flex-col sm:flex-row-reverse sm:!gap-10 gap-1'>
+                                                  <img src={urlFor(data.EngineeringAspectImage).url()} alt="" className='sm:w-1/2 w-full' />
+                                                  <div className='mx-auto'>
+                                                       <span className='text-3xl font-bold font-serif'>"An Engineer."</span>
+                                                       <p className='text-lg pt-2'>{data.EngineeringAspect}</p>
+                                                  </div>
+                                             </div>
                                         </div>
-                                        <div>
-                                             <p className='text-lg py-2'>{data.musicAspect}</p>
+                                        }
+                                        {data.musicAspectImage && <div className='border-2 !border-primary my-6 p-4 !border-opacity-30 rounded-lg sm:border-none'>
+                                             <div className='flex flex-col sm:flex-row sm:!gap-10 gap-1'>
+                                                  <img src={urlFor(data.musicAspectImage).url()} alt="" className='sm:w-1/2 w-full' />
+                                                  <div className='mx-auto'>
+                                                       <span className='text-3xl font-bold font-serif'>"A Music Lover."</span>
+                                                       <p className='text-lg pt-2'>{data.musicAspect}</p>
+                                                  </div>
+                                             </div>
                                         </div>
+                                        }
+                                        {data.OtherAspectImage && <div className='border-2 !border-primary my-6 p-4 !border-opacity-30 rounded-lg sm:border-none'>
+                                             <div className='flex flex-col sm:flex-row-reverse sm:!gap-10 gap-1'>
+                                                  <img src={urlFor(data.OtherAspectImage).url()} alt="" className='sm:w-1/2 w-full' />
+                                                  <div className='mx-auto'>
+                                                       <span className='text-3xl font-bold font-serif'>"Another Me."</span>
+                                                       <p className='text-lg pt-2'>{data.OtherAspect}</p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        }
                                         <div>
                                              <p className='text-lg py-2'>{data.OtherAspect}</p>
                                         </div>
