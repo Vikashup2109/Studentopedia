@@ -23,7 +23,7 @@ const HarshitShakya = () => {
           <>
                <section className='w-11/12 sm:w-10/12 xl:w-8/12 mx-auto text-justify'>
                     <div className='w-full text-center py-16'>
-                         <span className='text-5xl text-center'>Founder's Note.</span>
+                         <span className='text-5xl text-center'>Co-Founder's Note.</span>
                     </div>
                     {aboutHarshitData && aboutHarshitData.map((data) => {
                          return (
@@ -93,7 +93,7 @@ const HarshitShakya = () => {
                                    </div>
                                    <div className='flex flex-col text-right py-16'>
                                         <span className='text-3xl font-mono'>- Harshit Shakya</span>
-                                        <span className='text-xl font mono'>Founder</span>
+                                        <span className='text-xl font mono'>Co-Founder, Studentopedia.</span>
                                    </div>
                               </>
                          )

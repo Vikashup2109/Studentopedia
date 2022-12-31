@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.png'
-import Photo from "../assets/Owner.png"
+import Photo from "../assets/Manager.png"
+import Owner from "../assets/Owner_JitendraShakya.png"
 import { RiYoutubeFill, RiInstagramFill, RiFacebookCircleFill, RiLinkedinBoxFill, RiExternalLinkFill } from 'react-icons/ri'
 // import { HiOutlineArrowTopRightOnSquare } from 'react-icons/hi'
 
@@ -27,21 +28,39 @@ const Footer = () => {
                          </div>
                          <div className='flex flex-col md:flex-row gap-16 mx-auto md:justify-between items-center text-white'>
                               <div className='flex items-center gap-6'>
-                                   <img src={Photo} alt="Owner" className='w-12 sm:w-16 rounded-xl' />
+                                   <img src={Owner} alt="Owner" className='w-10 sm:w-12 rounded-xl' />
                                    <Link to="/harshitShakya">
                                         <div className='flex flex-col'>
-                                             <span className='text-sm sm:text-base font-mono'>Owned and Managed by</span>
-                                             <span className='text-sm sm:text-lg font-mono flex items-center gap-4'>Harshit Shakya <RiExternalLinkFill /></span>
+                                             <span className='text-sm sm:text-sm font-mono'>Owned by</span>
+                                             <span className='text-sm sm:text-sm font-mono flex items-center gap-2'>Jitendra Singh Shakya <RiExternalLinkFill /></span>
                                         </div>
                                    </Link>
                               </div>
-                              <div className='items-center my-auto flex gap-10 justify-around'>
-                                   <Link to="/aboutUs">
-                                        <button type="submit" className='text-sm px-3 py-1.5 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>About Us</button>
+                              <div className='flex items-center gap-6'>
+                                   <img src={Photo} alt="Owner" className='w-10 sm:w-12 rounded-xl' />
+                                   <Link to="/harshitShakya">
+                                        <div className='flex flex-col'>
+                                             <span className='text-sm sm:text-sm font-mono'>Managed by</span>
+                                             <span className='text-sm sm:text-sm font-mono flex items-center gap-2'>Harshit Shakya <RiExternalLinkFill /></span>
+                                        </div>
                                    </Link>
-                                   <Link to="/donation">
-                                        <button type="submit" className='text-sm px-3 py-1.5 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>Donate Us</button>
-                                   </Link>
+                              </div>
+                              <div className='space-y-6'>
+                                   <div className='items-center my-auto flex gap-10 justify-around'>
+                                        <Link to="/aboutUs">
+                                             <button type="submit" className='text-sm px-3 py-1.5 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>About Us</button>
+                                        </Link>
+                                        <Link to="/donation">
+                                             <button type="submit" className='text-sm px-3 py-1.5 rounded-xl border-2 border-white  text-white hover:bg-white hover:!text-[#141414] cursor-pointer'>Donate Us</button>
+                                        </Link>
+                                   </div>
+                                   <div className='font-mono text-xs flex justify-center gap-1 opacity-40 items-center'>
+                                        <span>Developed By: </span>
+                                        <a href="https://vikash.vercel.app/" target="_blank" className='flex'>
+                                             <span>  Vikash Upadhyay</span>
+                                             <RiExternalLinkFill />
+                                        </a>
+                                   </div>
                               </div>
                          </div>
                          <div className='mx-auto w-fit pt-8'>
