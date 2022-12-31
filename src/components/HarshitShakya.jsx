@@ -92,7 +92,7 @@ const HarshitShakya = () => {
                                         </div>
                                    </div>
                                    <div className='flex flex-col text-right py-16'>
-                                        <span className='text-3xl font-mono'>- Harshit Shakya</span>
+                                        <span className='text-3xl font-mono'> - Harshit Shakya</span>
                                         <span className='text-xl font mono'>Co-Founder, Studentopedia.</span>
                                    </div>
                               </>
