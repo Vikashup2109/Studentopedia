@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 import Photo from "../assets/Manager.png"
-import Owner from "../assets/Owner_JitendraShakya.png"
+import Owner from "../assets/Owner.png"
 import { RiYoutubeFill, RiInstagramFill, RiFacebookCircleFill, RiLinkedinBoxFill, RiExternalLinkFill } from 'react-icons/ri'
 // import { HiOutlineArrowTopRightOnSquare } from 'react-icons/hi'
 
