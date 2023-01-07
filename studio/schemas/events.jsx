@@ -131,6 +131,7 @@ export default {
           {
                name: 'isCompleted',
                type: 'boolean',
+               default: false,
                title: 'Is this Event Completed',
                description: 'Is completed or not'
           },
